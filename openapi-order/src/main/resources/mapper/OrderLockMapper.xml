@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cclu.openapiorder.mapper.OrderLockMapper">
+
+    <resultMap id="BaseResultMap" type="com.cclu.openapicommon.model.entity.OrderLock">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
+            <result property="orderSn" column="orderSn" jdbcType="VARCHAR"/>
+            <result property="lockNum" column="lockNum" jdbcType="BIGINT"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userId,orderSn,
+        lockNum,status,createTime,
+        updateTime
+    </sql>
+</mapper>

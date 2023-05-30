@@ -1,0 +1,4 @@
+openapi:
+  analysis:
+    top:
+      limit: 3
